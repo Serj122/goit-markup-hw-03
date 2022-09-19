@@ -36,6 +36,28 @@ body {
   margin: -1px;
 }
 
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+
 /* Логотип */
 
 .logo {
@@ -90,6 +112,8 @@ body {
 
 .hero {
   background-color: #2f303a;
+  text-align: center;
+  margin-bottom: 94px;
 }
 
 .button {
@@ -97,23 +121,26 @@ body {
   cursor: pointer;
 }
 
-.button.hero {
+.hero-button {
   color: var(--secondary-accent-color);
   background-color: var(--primary-accent-color);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-}
 
-.button.hero:hover,
-.button.hero:focus {
-  background: #188CE8;
+  padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  min-width: 216px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background: #188ce8;
 }
 
 .hero-title {
@@ -121,12 +148,18 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-bottom: 30px;
 }
 
 /* Особливості */
+
+.features .container {
+  /* display: inline-block; */
+  margin-bottom: 94px;
+}
 
 .features-title {
   color: var(--title-text-color);
@@ -146,9 +179,17 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
 }
 
 /* Наша команда */
+
+.team {
+  background-color: var(--buttons-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .team-title {
   color: var(--title-text-color);
@@ -157,6 +198,8 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
 }
 
 .team-item {
@@ -166,6 +209,8 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 10px;
 }
 
 .team-spec {
@@ -173,6 +218,16 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 30px;
+}
+
+.team-img {
+  padding-bottom: 30px;
+  background-color: var(--secondary-accent-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* Футер */
@@ -180,10 +235,16 @@ body {
 .footer {
   background-color: #2f303a;
   color: var(--secondary-accent-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .logo {
   color: var(--secondary-accent-color);
+
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .footer .contact {
@@ -199,6 +260,10 @@ body {
 }
 .address {
   font-style: normal;
+}
+
+.address-item {
+  margin-bottom: 9px;
 }
 
 /* portfolio */
