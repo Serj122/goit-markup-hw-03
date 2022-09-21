@@ -53,6 +53,12 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 2px solid tomato; */
+  
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Логотип */
@@ -76,6 +82,11 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+   
+}
+
+header {
+  border-bottom: 1px solid #ECECEC;
 }
 
 .container.header .list {
@@ -178,12 +189,6 @@ ul {
 
 /* Особливості */
 
-.features .container {
-  /* display: inline-block; */
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .features-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -211,8 +216,8 @@ ul {
 
 /* Чим ми займаємося */
 
-.works {
-  padding-bottom: 94px;
+.works.section {
+  padding-top: 0px;
 }
 
 .works-title {
@@ -246,10 +251,9 @@ ul {
 
 /* Наша команда */
 
-.team {
+.team.section {
   background-color: var(--buttons-color);
-  padding-bottom: 94px;
-}
+  }
 
 .team-title {
   color: var(--title-text-color);
@@ -413,4 +417,11 @@ margin-bottom: 9px;
 
 .title-text {
   padding: 20px 24px;
+  border: 1px solid #EEEEEE;
+  border-top: 1px solid transparent;
+}
+
+.project-item img {
+  display: block;
+
 }
