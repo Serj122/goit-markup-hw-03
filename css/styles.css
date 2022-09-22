@@ -147,6 +147,7 @@ header {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  padding: 200px 0;
 }
 
 .button {
@@ -184,6 +185,9 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 }
 
@@ -288,7 +292,6 @@ header {
 
 .team-body {
   display: block;
-  padding-bottom: 30px;
   background-color: var(--secondary-accent-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -306,6 +309,10 @@ header {
 
 .team-body:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-content {
+  padding: 30px;
 }
 /* Футер */
 
@@ -377,9 +384,8 @@ margin-bottom: 9px;
   margin-right: 8px;
 }
 
-.project-btn {
-  padding-top: 94px;
-  padding-bottom: 50px;
+.examples.section .list {
+  margin-bottom: 50px;
 }
 
 .examples .button:hover,
@@ -394,6 +400,8 @@ margin-bottom: 9px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
 }
 
 .examples .text {
